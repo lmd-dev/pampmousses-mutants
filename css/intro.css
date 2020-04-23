@@ -1,0 +1,52 @@
+﻿
+
+#intro {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/intro/background.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    #intro.hidden {
+        display: none;
+    }
+
+    #intro > div {
+        display: flex;
+        align-items: center;
+    }
+
+#intro-title {
+    margin-left: 30px;
+    font-size: 50px;
+    color: #540d0d;
+    font-family: pampmousses;
+}
+
+    #intro-title big {
+        font-size: 80px;
+    }
+
+#btn-play {
+    font-family: pampmousses;
+    font-size: 40px;
+    padding: 20px;
+    border: none;
+    background: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: font-size 0.5s;
+    cursor: pointer;
+}
+
+    #btn-play:hover {
+        color: #540d0d;
+        font-size: 50px;
+    }

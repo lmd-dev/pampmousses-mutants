@@ -1,0 +1,55 @@
+﻿.dialog
+{
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.dialog.hidden {
+    display: none;
+}
+
+.dialog-window {
+    background-color: rgba(212, 212, 212, 0.67);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+    .dialog-window h2 {
+        font-family: pampmousses;
+        font-size: 40px;
+        color: #540d0d;
+    }
+
+.dialog button {
+    font-family: pampmousses;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    background: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: font-size 0.5s;
+    cursor: pointer;
+}
+
+    .dialog button:hover {
+        color: #540d0d;
+        font-size: 21px;
+    }
+
+    .dialog small
+    {
+        font-size: 15px;
+        font-style: italic;
+    }

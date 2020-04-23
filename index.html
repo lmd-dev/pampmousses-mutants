@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>L'attaque des Pampmousses Mutants</title>
+    <link href="css/body.css" rel="stylesheet" />
+    <link href="css/dialog.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/game.css" rel="stylesheet" />
+    <link href="css/hud.css" rel="stylesheet" />
+    <link href="css/intro.css" rel="stylesheet" />
+    <link href="img/intro/pampmousse.png" rel="icon" />
+</head>
+<body>
+    <div id="intro">
+        <div>
+            <img src="img/intro/pampmousse.png" />
+            <div id="intro-title">L'attaque des<br /><big>Pampmousses Mutants !</big></div>
+        </div>
+        <button id="btn-play">Jouer !</button>
+    </div>
+    <div id="game-area">
+        <div id="background"></div>
+        <canvas></canvas>
+    </div>
+    <div id="hud">
+        <div id="level">1</div>
+        <div id="health">0</div>
+        <div id="ammo">0</div>
+    </div>
+    <div id="dlg-won" class="dialog hidden">
+        <div class="dialog-window">
+            <h2>Vous avez vaincu !</h2>
+            <p>Vos exploits seront chantés jusqu'à la fin des temps !<br /><small>(pas comme le dernier album de Francis Lalanne)</small></p>
+            <p><button id="btn-next">Niveau suivant !</button></p>
+        </div>
+    </div>
+    <div id="dlg-lost" class="dialog hidden">
+        <div class="dialog-window">
+            <h2>Vous avez echoue !</h2>
+            <p>Les chants à votre gloire se sont évaporés plus vite<br />que le dernier single de Francis Lalanne !</p>
+            <p><button id="btn-menu">Retour au menu !</button></p>
+        </div>
+    </div>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/patterns/observer.js"></script>
+    <script src="js/patterns/subject.js"></script>
+    <script src="js/application/pampmousses-mutants-app.js"></script>
+    <script src="js/controllers/controller-game.js"></script>
+    <script src="js/views/view-game.js"></script>
+    <script src="js/views/view-hud.js"></script>
+    <script src="js/views/view-intro.js"></script>
+    <script src="js/views/view-won.js"></script>
+    <script src="js/views/view-lost.js"></script>
+    <script src="js/models/coordinates.js"></script>
+    <script src="js/models/graphical-item.js"></script>
+    <script src="js/models/movable-item.js"></script>
+    <script src="js/models/ammo.js"></script>
+    <script src="js/models/human.js"></script>
+    <script src="js/models/pampmousse.js"></script>
+    <script src="js/models/bullet.js"></script>
+    <script src="js/models/map.js"></script>
+    <script src="js/models/game.js"></script>
+    <script src="js/models/textures-loader.js"></script>
+    <script src="js/models/texture.js"></script>
+    <script src="js/models/game-status.js"></script>
+</body>
+</html>

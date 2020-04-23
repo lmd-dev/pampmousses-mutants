@@ -1,0 +1,39 @@
+﻿
+
+#hud {
+    background-color: #ececec;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: fantasy;
+}
+
+#health, #ammo, #level {
+    padding-left: 70px;
+    padding-right: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    height: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    width: 150px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+#health {
+    background-image: url(../img/hud/health.svg);
+}
+
+#level {
+    background-image: url(../img/hud/level.svg);
+}
+
+#ammo {
+    background-image: url(../img/hud/ammo.svg);
+}
